@@ -1,0 +1,17 @@
+body {
+    background-color:yellowgreen;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    list-style-type: none;
+    background-color:green;
+}
+nav a {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+}
