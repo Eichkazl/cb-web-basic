@@ -32,10 +32,13 @@ h1 {
     text-align: center;
 }
 
-.flex {
+.flex, .flex2, .flex3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.flex {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -46,12 +49,14 @@ h1 {
 }
 
 .flex2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    max-width: 35%;
+    width: 40%;
     min-height: fit-content;
+}
+
+.flex3 {
+   justify-content: space-around; 
 }
 
 .item-full {
