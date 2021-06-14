@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-item {
+    flex: 25% 0 1;
+}
+.img-fluid {
+    max-width: 90%;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
