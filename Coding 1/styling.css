@@ -1,3 +1,13 @@
+@media (max-width: 1300px) {
+    .flex, .flex2 {
+        flex-direction: column;
+    }
+    .item-half {
+        text-align: center;
+    }
+}
+
+
 body {
     background-color:yellowgreen;
     font-size: 120%;
@@ -22,8 +32,8 @@ nav a {
 }
 
 section {
-    border: 1px solid black;
-    border-radius: 25px;
+    /* border: 1px solid black;
+    border-radius: 25px; */
     padding: 10px;
     margin: 1%;
 }
@@ -41,10 +51,7 @@ h1 {
 .flex {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    
+    border-radius: 80px;
     margin: 1%;
 }
 
