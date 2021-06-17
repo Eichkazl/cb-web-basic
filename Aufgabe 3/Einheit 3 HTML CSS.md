@@ -1,4 +1,4 @@
-# Übung 3 - Kapitel 6, 7
+ # Übung 3 - Kapitel 6, 7
 
 Erstelle ein neues Projekt und strukturiere nach folgendem Schema:<br>
 '- index.html<br>

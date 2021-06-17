@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kontaktiere uns</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+        <nav>
+            <ul>
+                <img class="logo" src="img/Zoo-Logo.png" alt="Logo">
+                <div></div> <div></div><div></div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="" method="post" class="contactForm">
+                   <fieldset>
+               
+                    <label>Name <input type="text" name="Name"></label><br><br>
+
+                    <label>Email <input type="email" name="email"></label><br><br>
+
+                     <label>Besuchstag <input type="date" name="date"></label><br><br>
+                
+                     <label>Besuchszeit <input type="time" name="time"></label><br><br>
+                
+                     <label>Hat es gefallen <input type="range" name="range" min="1" max="10"></label><br><br>
+
+                     <label>Weiterempfählung? &nbsp; &nbsp; Ja <input type="radio" name="radio" value="0"></label>
+                         <label>Nein <input type="radio" name="radio" value="1"></label><br><br>
+                
+                     <label> Welche Tierart hat am besten gefallen? <input list="animals" name="animals" />
+                        <datalist id="animals">
+                          <option value="Strauß">
+                          <option value="Tieger">
+                          <option value="Koala">
+                          <option value="Bison">
+                          <option value="Aligator">
+                        </datalist><br>
+
+                     <p>Ihr Kommentar:</p>
+                     <label><textarea name="Kommentar" cols="59" rows="10"></textarea><br><br>
+
+                     <label>Besucherinfo <select name="Besucherinfo" form="formularid">
+                        <option>Familienausflug</option>
+                        <option>Allein unterwegs</option>
+                        <option>Gruppenausflug</option>
+                        <option>Ausflug mit Freunden</option>
+                        <option>Sonstiges</option>
+                      </select></label><br><br>
+
+                     <label>submit <input type="submit" name="submit"></label><br><br>
+                
+                   </fieldset>    
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

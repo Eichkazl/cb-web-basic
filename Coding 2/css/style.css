@@ -11,4 +11,28 @@
     width: 100%;
     display: block;
     margin: 10px auto;
+    height: auto;
+}
+.p-rel {
+    position: relative;
+}
+.p-rel img {
+    max-width: 100%;
+}
+.p-ab {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    text-align: center;
+}
+.p-ab{
+    visibility: hidden;
+}
+.p-rel:hover .p-ab {
+    visibility: visible;
+}
+.item-center {
+    align-items: center;
 }

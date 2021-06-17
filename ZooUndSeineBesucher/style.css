@@ -1,0 +1,162 @@
+@media (max-width: 1450px) {
+    main {
+        /* flex-direction: column; */
+    }
+}
+
+body {
+    background-color:rgb(255, 239, 194);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10em;
+    align-items: center;
+    min-height: 100px;
+    list-style-type: none;
+    
+    border-radius: 100px;
+    border: solid 8px white;
+}
+nav a {
+    color: black;
+    font-size: 28px;
+    text-decoration: none;
+}
+.logo {
+    height: 4em;
+    justify-self: flex-start;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+}
+
+.news-item {
+    display: flex;
+    max-width: 100%;
+    flex-flow: row;
+    flex-shrink: 1;
+}
+.item {
+    width: 90%;
+}
+.text {
+    max-width: 45%;
+    padding: 10px;
+    max-width: 270px;
+}
+.img-fluid, .img-fluid2{
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 95%;
+    flex: 100% 1 1;
+}
+.img-fluid{
+    max-width: 45%;
+    min-width: 270px;
+}
+.animalTable, .contactForm {
+    min-width: 70%;
+    max-width: 90%;
+    margin:34px auto;
+    padding: 10px;
+    border-spacing: 10px;
+    text-align: center;
+    border: solid 5px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 45%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
