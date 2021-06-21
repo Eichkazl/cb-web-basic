@@ -1,13 +1,10 @@
-@media (max-width: 1450px) {
-    main {
-        /* flex-direction: column; */
-    }
-}
-
 body {
     background-color:rgb(255, 239, 194);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
+}
+nav{
+  margin-bottom: 50pt;
 }
 nav ul{
     display: flex;
@@ -37,7 +34,7 @@ main {
 
 .news {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     max-width: 45%;
 }
 
@@ -48,12 +45,11 @@ main {
     flex-shrink: 1;
 }
 .item {
-    width: 90%;
+    width: 100%;
 }
 .text {
-    max-width: 45%;
     padding: 10px;
-    max-width: 270px;
+    min-width: 50%;
 }
 .img-fluid, .img-fluid2{
     border-radius: 30px;
@@ -62,44 +58,56 @@ main {
     flex: 100% 1 1;
 }
 .img-fluid{
-    max-width: 45%;
+    min-width: 30%;
+    max-width: 33%;
     min-width: 270px;
 }
 .animalTable, .contactForm {
     min-width: 70%;
     max-width: 90%;
-    margin:34px auto;
+    margin:0px auto 40px;
     padding: 10px;
     border-spacing: 10px;
     text-align: center;
     border: solid 5px white;
 }
 
+dl{
+  font-size: 18pt;
+}
+dd{
+  text-align: center;
+}
 
+footer{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 228, 163);
+  color: rgb(95, 173, 125);
+}
 
+.footblock{
+  max-width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+footer div{
+  min-width: 130px;
+  margin: 5px;
+}
 
-
-
-
-
-
-
-/* * {box-sizing:border-box} */
-
-/* Slideshow container */
 .slideshow-container {
-  max-width: 45%;
+  max-width: 95%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -111,23 +119,17 @@ main {
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -143,7 +145,6 @@ main {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -159,4 +160,29 @@ main {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (max-width: 1170px) {
+  main {
+      flex-direction: column;
+      align-items: center;
+  }
+  .news{
+    max-width: 75%;
+  }
+  .footblock{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .news-item{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footblock{
+    flex-direction: column;
+    align-items: center;
+  }
 }
