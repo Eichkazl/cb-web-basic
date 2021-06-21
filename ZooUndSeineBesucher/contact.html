@@ -12,50 +12,48 @@
         </header>
         <nav>
             <ul>
-                <img class="logo" src="img/Zoo-Logo.png" alt="Logo">
-                <div></div> <div></div><div></div>
+                <li><img class="logo" src="img/Zoo-Logo.png" alt="Logo"></li>
+                <li class="push"><a href="info.html">Info</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">Info</a></li>
             </ul>
         </nav>
         <main>
-            <form action="" method="post" class="contactForm">
+            <form action="" method="POST" class="contactForm">
                    <fieldset>
                
-                    <label>Name <input type="text" name="Name"></label><br><br>
+                    <div><label>Name <input type="text" name="Name"></label></div>
 
-                    <label>Email <input type="email" name="email"></label><br><br>
+                    <div><label>Email <input type="email" name="email"></label></div>
 
-                     <label>Besuchstag <input type="date" name="date"></label><br><br>
+                    <div><label>Besuchstag <input type="date" name="date"></label></div>
                 
-                     <label>Besuchszeit <input type="time" name="time"></label><br><br>
+                    <div><label>Besuchszeit <input type="time" name="time"></label></div>
                 
-                     <label>Hat es gefallen <input type="range" name="range" min="1" max="10"></label><br><br>
+                    <div><label>Hat es gefallen <input type="range" name="range" min="1" max="10"></label></div>
 
-                     <label>Weiterempfählung? &nbsp; &nbsp; Ja <input type="radio" name="radio" value="0"></label>
-                         <label>Nein <input type="radio" name="radio" value="1"></label><br><br>
+                    <div><label>Weiterempfählung? &nbsp; &nbsp; Ja <input type="radio" name="radio" value="0">
+                         <label>Nein <input type="radio" name="radio" value="1"></label></div>
                 
-                     <label> Welche Tierart hat am besten gefallen? <input list="animals" name="animals" />
+                    <div><label> Welche Tierart hat am besten gefallen? <input list="animals" name="animals" />
                         <datalist id="animals">
                           <option value="Strauß">
                           <option value="Tiger">
                           <option value="Koala">
                           <option value="Bison">
                           <option value="Aligator">
-                        </datalist><br>
+                        </datalist></div>
 
-                     <p>Ihr Kommentar:</p>
-                     <label><textarea name="Kommentar" cols="59" rows="10"></textarea><br><br>
+                    <div><p>Ihr Kommentar:</p><label><textarea name="Kommentar" cols="59" rows="10"></textarea></div>
 
-                     <label>Besucherinfo <select name="Besucherinfo" form="formularid">
+                    <div><label>Besucherinfo <select name="Besucherinfo" form="formularid">
                         <option>Familienausflug</option>
                         <option>Allein unterwegs</option>
                         <option>Gruppenausflug</option>
                         <option>Ausflug mit Freunden</option>
                         <option>Sonstiges</option>
-                      </select></label><br><br>
+                      </select></label></div>
 
-                     <label>submit <input type="submit" name="submit"></label><br><br>
+                    <div><button type="submit" name="submit">Submit</button></div>
                 
                    </fieldset>    
             </form>

@@ -8,8 +8,8 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: space-between;
-    padding-right: 10em;
+    justify-content: flex-end;
+    padding-right: 10rem;
     align-items: center;
     min-height: 100px;
     list-style-type: none;
@@ -18,12 +18,17 @@ nav ul{
     border: solid 8px white;
 }
 nav a {
+    margin: 0pt 35px;
     color: black;
     font-size: 28px;
     text-decoration: none;
 }
+.push {
+  margin-left: auto;
+}
+    
 .logo {
-    height: 4em;
+    height: 4rem;
     justify-self: flex-start;
 }
 main {
@@ -71,7 +76,9 @@ main {
     text-align: center;
     border: solid 5px white;
 }
-
+main div{
+  margin: 20px 0px;
+}
 dl{
   font-size: 18pt;
 }
@@ -117,7 +124,7 @@ footer div{
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   transition: 0.6s ease;
   user-select: none;
 }
@@ -127,14 +134,14 @@ footer div{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(40, 80, 80, 0.6);
 }
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -142,7 +149,7 @@ footer div{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgb(40, 80, 80);
 }
 
 .fade {
