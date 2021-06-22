@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'ouroboros';
+    src: url('fonts/ouroboros-webfont.woff2') format('woff2'),
+         url('fonts/ouroboros-webfont.woff') format('woff');
+}
+body {
+    background-color:rgb(255, 230, 180);
+    font-family: ouroboros, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    color: rgb(122, 122, 122);
+}
+.text {
+    border: solid 5px #fff;
+    border-radius: calc(30% - 12vh);
+    background-color: rgb(250, 230, 160);
+}
+h1 {
+    color: hsla(230, 100%, 45%, 0.8);
+    text-shadow: 6px 5px 4px #fff;
+}
+footer{
+    background-color: rgb(250, 230, 160);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 85%;
+    line-height: 2.2;
+}
+nav a {
+    color: black;
+    text-decoration: overline;
+    text-decoration-color: white;
+}
+nav a:hover, a:active, a:focus{
+    color: blue;
+}

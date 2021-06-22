@@ -1,15 +1,10 @@
-body {
-    background-color:rgb(255, 239, 194);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-}
+
 nav{
   margin-bottom: 50pt;
 }
 nav ul{
     display: flex;
     justify-content: flex-end;
-    padding-right: 10rem;
     align-items: center;
     min-height: 100px;
     list-style-type: none;
@@ -18,10 +13,8 @@ nav ul{
     border: solid 8px white;
 }
 nav a {
-    margin: 0pt 35px;
-    color: black;
+    margin-right:  10rem;
     font-size: 28px;
-    text-decoration: none;
 }
 .push {
   margin-left: auto;
@@ -53,7 +46,7 @@ main {
     width: 100%;
 }
 .text {
-    padding: 10px;
+    padding: 30px;
     min-width: 50%;
 }
 .img-fluid, .img-fluid2{
@@ -86,14 +79,6 @@ dd{
   text-align: center;
 }
 
-footer{
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(251, 228, 163);
-  color: rgb(95, 173, 125);
-}
-
 .footblock{
   max-width: 95%;
   display: flex;
@@ -103,6 +88,12 @@ footer{
 footer div{
   min-width: 130px;
   margin: 5px;
+}
+footer{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .slideshow-container {
@@ -169,7 +160,7 @@ footer div{
   to {opacity: 1}
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1350px) {
   main {
       flex-direction: column;
       align-items: center;
@@ -180,10 +171,25 @@ footer div{
   .footblock{
     flex-wrap: wrap;
   }
+  nav a {
+    margin-right: 5rem;
+  }
 }
 @media screen and (max-width: 800px) {
   .news-item{
     flex-direction: column;
+  }
+  nav a {
+    margin-right: 2rem;
+  }
+  .threeimg {
+    text-align: center;
+  }
+  .text {
+    order: 1;
+  }
+  .wksa {
+    order: 2;
   }
 }
 
