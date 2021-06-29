@@ -1,0 +1,71 @@
+.scene {
+    position: relative;
+    height: 400px;
+    margin: 300px 0 300px;
+    perspective: 500px;
+    border: none;
+}
+
+.cube-img{
+    width: 400px;
+    height: 400px;
+}
+
+.cube {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+
+    animation: spinCube 40s infinite ease-in-out;
+}
+
+@keyframes spinCube {
+    0%    {transform: translateZ(-200px) rotateX( 0deg)    rotateY( 0deg);}          /* front */
+    17%   {transform: translateZ(-200px) rotateX( 360deg)  rotateY( 270deg);}        /* right */
+    33%   {transform: translateZ(-200px) rotateX( 720deg)  rotateY( 540deg);}        /* back */
+    50%   {transform: translateZ(-200px) rotateX( 1080deg) rotateY( 810deg);}        /* left */
+    66%   {transform: translateZ(-200px) rotateX( 1350deg) rotateY( 1080deg);}       /* top */
+    83%   {transform: translateZ(-200px) rotateX( 1530deg) rotateY( 1440deg);}       /* bottom */
+    100%  {transform: translateZ(-200px) rotateX( 1800deg) rotateY( 1800deg);}       /* front */
+}
+
+.cube__face {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    line-height: 400px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,194,70,1) 9%, rgba(255,231,181,1) 22%, rgba(255,207,220,1) 28%, rgba(215,141,238,0.6010737058495272) 34%, rgba(69,249,74,0.8) 54%, rgba(250,66,244,0.4) 76%, rgba(63,251,74,0) 88%, rgba(63,251,232,1) 100%); 
+    text-align: center;
+}
+
+
+.cube__face--front {
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+.cube__face--back {
+    transform: rotateY(-180deg) translateZ(200px);
+}
+
+.cube__face--right {
+    transform: rotateY(-270deg) translateZ(200px);
+}
+
+.cube__face--top {
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.cube__face--left {
+    transform: rotateY(-90deg) translateZ(200px);
+}
