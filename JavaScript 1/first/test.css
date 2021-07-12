@@ -1,0 +1,27 @@
+body, main, article, section, table { 
+    background-color: white;
+    margin: 0;
+    padding: 8vh;
+    border: 3px solid;
+}
+
+body {
+    border-color:  black;
+}
+
+main {
+    border-color:  blue;
+}
+
+article {
+    border-color:  red;
+}
+
+section {
+    border-color:  green;
+}
+
+.table{
+    margin: auto;
+    font-size: 180%;
+}

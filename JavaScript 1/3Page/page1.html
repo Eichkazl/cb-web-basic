@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+
+    <body>
+        <script>
+            let number1 = ((Math.round(Math.random()*1000))/10);
+            let number2 = ((Math.round(Math.random()*10)));
+
+            let wrong = true;
+            
+            while (wrong) {
+                
+                let answer = prompt(number1 + " + " + number2);
+                
+                if (answer == (number1 + number2)) {
+                    window.open("page2.html");
+                    wrong = false;
+                    window.close();
+                }
+            }
+        </script>    
+    </body>
+</html>
