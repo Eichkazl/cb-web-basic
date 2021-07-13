@@ -19,7 +19,7 @@
 // a.onclick = articelclick;
 // s.onclick = sectionclick;
 
-// var cells = table.getElementsByTagName("td"); 
+// var cells = document.getElementsByTagName("td"); 
 // for (var i = 0; i < cells.length; i++) { 
 //    cells[i].onclick = redClicked;
 // }
@@ -48,4 +48,8 @@ function clicked(colorClick) {
         else
             colorClick.target.style.backgroundColor = 'red';
     }
+}
+
+window.x = function (wert) {
+    alert(wert);
 }

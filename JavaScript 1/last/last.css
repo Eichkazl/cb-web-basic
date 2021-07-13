@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 30vw;
+    height: 95vh;
+    justify-content: space-evenly;
+}
+
+section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 4vh;
+    width: 10vw;
+}

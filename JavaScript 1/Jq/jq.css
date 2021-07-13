@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 30vw;
+    height: 95vh;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 4vh;
+    width: 6vw;
+}
+
+div {
+    background-color: coral;
+    height: 6vh;
+    width: 12vw;
+}

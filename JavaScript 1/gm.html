@@ -6,19 +6,100 @@
     </head>
 
     <body>
-        <h1></h1>
+        <h1 id="ueber"></h1>
         <p></p>
+
+        <div>
+            <input type="text" id="btnIn">
+            <button onclick = "changeText();" id="btn">Button</button>
+        </div>
+
+        <form>
+            <label for="inputmail">E-Mail</label>
+            <input id="inputmail" name="mail">
+        </form>
+        
+        <div>
+            <input type="text" id="link">
+            <button onclick = "goTo();" id="btn">goTo</button>
+        </div>
+
+        <img src="" alt="Bild1" class="imgs">
+        <button onclick = "showPictures();" id="imgbtn"> show Pictures </button>
+        <img src="" alt="Bild2" class="imgs">
 
         <script>
 
+            function showPictures() {
+                document.images[0].src = "niilo-isotalo-r_TzuObQYBQ-unsplash.jpg";
+                document.images[1].src = "zdenek-machacek-2G95-ySVq2Y-unsplash.jpg";
+            }
+
+            function goTo() {
+                let link = document.getElementById("link").value;
+
+                if (!(link.includes("http://")))
+                    link = ("http://" + link);
+
+                location.href = link;
+            }
+
             let inhalt = prompt("Überschrift:")
 
-            document.getElementsByTagName("H1").innerHTML = inhalt;
+            if (inhalt == "")
+                inhalt = "Überschrift";
 
+            document.getElementById("ueber").innerHTML = inhalt;
             inhalt = prompt("Text:")
 
-            document.getElementsByTagName("P").innerHTML = inhalt;
+            if (inhalt == "")
+                inhalt = "Lorem ipsum, dolor sit amet consectetur adipisicing elit.";
+
+            let body = document.getElementsByTagName("BODY")[0];
+            body.getElementsByTagName("P")[0].innerHTML = inhalt;
+
+            function changeText() {
+                let inhalt = document.getElementById("btnIn").value || "Button";
+                document.getElementById("btn").innerHTML = inhalt;
+            }
+
+            const mail = document.getElementById("inputmail");
+
+            mail.addEventListener('focus', (event) => {
+                // event.target.style.background = 'pink';
+                event.target.placeholder = "Ihre E-Mail ";
+            });
+
+            mail.addEventListener('blur', (event) => {
+                // event.target.style.background = '';
+                event.target.placeholder = "";
+
+                if (!(eMail(document.getElementById("inputmail").value)))
+                    alert("Ungültige E-Mail");
+            });
+
+            function eMail(s){
+                var res = false;
+                email = new RegExp ('^ ([a-zA-Z0-9-._]+)' + '(@)([a-zA-Z0-9-.]+)' + '(.)([a-zA-Z]{2,3}) $');
+                res = (email.test(s));
+                return(res);
+            } 
 
         </script>
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 95vh;
+                justify-content: space-evenly;
+            }
+
+            .imgs {
+                max-height: 20vh;
+            }
+        </style>
+
     </body>
 </html>
