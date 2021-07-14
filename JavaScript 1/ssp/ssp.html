@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schere Stein Papier</title>
+    <link rel="stylesheet" href="ssp.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="ssp.js"></script>
+</head>
+
+<body>
+
+    <label for="roundCount">How many rounds do yuo want to play?</label>
+    <select name="roundCount" id="roundCount">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="9">9</option>
+        <option value="11">11</option>
+        <option value="13">13</option>
+        <option value="15">15</option>
+        <option value="17">17</option>
+        <option value="19">19</option>
+        <option value="21">21</option>
+        <option value="23">23</option>
+        <option value="25">25</option>
+        <option value="27">27</option>
+        <option value="29">29</option>
+        <option value="31">31</option>
+    </select>
+
+    <div class="pics">
+        <img src="imgs/Papier.png" alt="Papier" onclick="ssp(0)">
+        <img src="imgs/Schere.png" alt="Schere" onclick="ssp(3)">
+        <img src="imgs/Stein.png" alt="Stein" onclick="ssp(6)">
+    </div>
+    
+    <p id="points"></p>
+
+    <p id="matchUp"></p>
+
+    <p id="winner"></p>
+
+</body>
+
+</html>

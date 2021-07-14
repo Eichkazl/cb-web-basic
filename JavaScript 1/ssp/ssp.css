@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10vw;
+    justify-content: space-evenly;
+}
+
+.pics {
+    display: flex;
+}
+
+img {
+    max-width: 25vw;
+    max-height:25vw;
+
+    min-width: 15vw;
+    min-height: 15vw;
+
+    clip-path: circle(44% at 50% 50%);
+}
+
+p {
+    font-size: 5vh;
+}
+

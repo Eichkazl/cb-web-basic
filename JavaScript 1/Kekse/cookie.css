@@ -8,26 +8,12 @@ body {
 }
 
 button {
-    height: 4vh;
-    width: 6vw;
+    height: 6vh;
+    width: 8vw;
 }
 
 div {
     height: 4vh;
     width: 12vw;
-}
-
-.corali {
-    font-size: 3vh;
-    background-color: coral;
     text-align: center;
-    padding: 1.5vh;
-}
-
-.div1 {
-    background-color: crimson;
-}
-
-.div2 {
-    background-color: darkcyan;
 }
