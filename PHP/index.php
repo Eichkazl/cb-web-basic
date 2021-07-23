@@ -37,6 +37,46 @@
     print "<p>$sum</p>";
 ?> 
 
+<?php
+$line1 = "Die Donau ist ins Wasser g'falln,";
+$line2 = "der Rheinstrom ist verbrannt,";
+$line3 = "In Frankfurt ist ein SpaI passiert,";
+$line4 = "der Geisbock hats erzählt";
+
+print "<p>" . $line1 . "<br>" . $line2 . "<br>" . $line3 . "<br>" . $line4 . "<br>" . "</p>";
+
+?> 
+
+<?php 
+
+$kunden = array();
+$kunden[0]["KundenNR"] = 123;
+$kunden[0]["Vorname"] = "Dominik";
+$kunden[0]["Nachname"] = "Luger";
+$kunden[1]["KundenNR"] = 895;
+$kunden[1]["Vorname"] = "Manuel";
+$kunden[1]["Nachname"] = "Foster";
+$kunden[2]["KundenNR"] = 378;
+$kunden[2]["Vorname"] = "Thomas";
+$kunden[2]["Nachname"] = "Plasser";
+
+foreach($kunden as $array) {
+    print "<p>";
+    foreach($array as $li => $entry) {
+        print $li . ": " . $entry. 
+        "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp";
+    }
+    print "</p>";
+}
+?>
+
+<?php 
+
+
+
+?>
+
+
 </body>
 
 </html>
