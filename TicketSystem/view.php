@@ -48,6 +48,7 @@ $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
     <div class="btns">
+        <a href="view.php?id=<?=$_GET['id']?>&status=open" class="btn blue">Reopen</a>
         <a href="view.php?id=<?=$_GET['id']?>&status=closed" class="btn red">Close</a>
         <a href="view.php?id=<?=$_GET['id']?>&status=resolved" class="btn">Resolve</a>
     </div>

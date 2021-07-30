@@ -28,7 +28,7 @@ if (isset($_POST['title'], $_POST['email'], $_POST['msg'])) {
         <label for="title">Title</label>
         <input type="text" name="title" placeholder="Title" id="title" required>
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="johndoe@example.com" id="email" required>
+        <input type="email" name="email" placeholder="name@example.com" id="email" required>
         <label for="msg">Message</label>
         <textarea name="msg" placeholder="Enter your message here..." id="msg" required></textarea>
         <input type="submit" value="Create">

@@ -25,11 +25,11 @@ $tickets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		<a href="view.php?id=<?=$ticket['id']?>" class="ticket">
 			<span class="con">
 				<?php if ($ticket['status'] == 'open'): ?>
-				<i class="far fa-clock fa-2x"></i>
+				    <i class="far fa-clock fa-2x"></i>
 				<?php elseif ($ticket['status'] == 'resolved'): ?>
-				<i class="fas fa-check fa-2x"></i>
+				    <i class="fas fa-check fa-2x"></i>
 				<?php elseif ($ticket['status'] == 'closed'): ?>
-				<i class="fas fa-times fa-2x"></i>
+				    <i class="fas fa-times fa-2x"></i>
 				<?php endif; ?>
 			</span>
 			<span class="con">

@@ -88,6 +88,15 @@ body {
     background-color: #32a367;
 }
 
+.btns .btn.blue {
+    background-color: #38b2b6;
+}
+
+.btns .btn.blue:hover {
+    background-color: #2f8c8f;
+}
+
+
 .btns .btn.red {
     background-color: #b63838;
 }
@@ -95,6 +104,7 @@ body {
 .btns .btn.red:hover {
     background-color: #a33232;
 }
+
 
 .home .tickets-list {
     display: flex;
@@ -150,7 +160,9 @@ body {
     background-color: #fcfcfc;
 }
 
-.view h2 .open,
+.view h2 .open {
+    color: #2f8c8f;
+}
 .view h2 .resolved {
     color: #38b673;
 }
