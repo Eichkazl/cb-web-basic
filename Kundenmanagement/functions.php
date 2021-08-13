@@ -2,9 +2,9 @@
 function pdo_connect_mysql() {
 
     $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'ticketSystem';
-    $DATABASE_PASS = 'zUflTK3ZkOPIp4q2';
-    $DATABASE_NAME = 'phpticket';
+    $DATABASE_USER = 'customerSystem';
+    $DATABASE_PASS = '9HRhS4o7Yrp9tITM';
+    $DATABASE_NAME = 'customer_management';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
@@ -38,4 +38,12 @@ echo <<<EOT
 </html>
 EOT;
 }
+
+function AddressEcho($out1, $out2) {
+echo <<<EOT
+<span class="adress">$out1 $out2</span>				
+EOT;
+
+}
+
 ?>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-family: "helvetica neue", Arial, sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -66,7 +66,7 @@ body {
 }
 
 .content {
-    width: 1000px;
+    max-width: 85vw;
     margin: 0 auto;
 }
 
@@ -116,12 +116,14 @@ body {
 }
 
 
-.home .tickets-list {
+.home .customers-list {
     display: flex;
     flex-flow: column;
 }
 
-.home .tickets-list .ticket {
+.home .customers-list .customer {
+    display: flex;
+    justify-content: space-between;
     padding: 15px 0;
     width: 100%;
     border-bottom: 1px solid var(--back2);
@@ -129,24 +131,37 @@ body {
     text-decoration: none;
 }
 
-.home .tickets-list .ticket .con {
+.home .customers-list .customer .con {
     display: flex;
     justify-content: center;
     flex-flow: column;
 }
 
-.home .tickets-list .ticket i {
+.home .customers-list .customer .con_main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.home .customers-list .customer i {
     text-align: center;
     width: 80px;
     color: var(--grey2);
 }
 
-.home .tickets-list .ticket .title {
+.home .customers-list .customer .name {
     font-weight: 600;
     color: var(--grey);
 }
 
-.home .tickets-list .ticket .msg {
+.home .customers-list .customer .adress {
+        flex-grow: 1;
+        margin-inline: 2vw;
+        color: var(--grey2);
+        font-size: 14px;
+}
+
+.home .customers-list .customer .contact {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -155,37 +170,37 @@ body {
     font-size: 14px;
 }
 
-.home .tickets-list .ticket .created {
+.home .customers-list .customer .created {
     flex-grow: 1;
     align-items: flex-end;
     color: var(--grey2);
     font-size: 14px;
 }
 
-.home .tickets-list .ticket:last-child {
+.home .customers-list .customer:last-child {
     border-bottom: 0;
 }
 
-.home .tickets-list .ticket:hover {
+.home .customers-list .customer:hover {
     background-color: #eeeeee;
 }
 
-.view h2 .open {
+.view h2 .Active {
     color: #2f8c8f;
 }
-.view h2 .resolved {
+.view h2 .Completed {
     color: #38b673;
 }
 
-.view h2 .closed {
+.view h2 .Dissolved {
     color: #b63838;
 }
 
-.view .ticket {
+.view .customer {
     padding: 20px 0;
 }
 
-.view .ticket .created {
+.view .customer .created {
     color: var(--grey);
 }
 
